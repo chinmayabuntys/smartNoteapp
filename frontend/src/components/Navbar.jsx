@@ -15,6 +15,14 @@ function Navbar() {
     navigate("/login");
   };
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
+  const goForward = () => {
+    navigate(1);
+  };
+
   return (
     <nav className="navbar">
 
@@ -23,6 +31,10 @@ function Navbar() {
       </h2>
 
       <div className="nav-links">
+
+        {/* Back & Forward Buttons */}
+        <button className="nav-btn" onClick={goBack}>⬅ Back</button>
+        <button className="nav-btn" onClick={goForward}>Forward ➡</button>
 
         {!token ? (
           <>

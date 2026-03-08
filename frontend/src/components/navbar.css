@@ -73,3 +73,16 @@
   background:#e63946;
   transform:translateY(-1px);
 }
+.nav-btn{
+  margin-right:10px;
+  padding:6px 12px;
+  border:none;
+  background:#4CAF50;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.nav-btn:hover{
+  background:#3e8e41;
+}

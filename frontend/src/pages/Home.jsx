@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import Loader from "./Loader";
 import { useNavigate } from "react-router-dom";
 import "../style/Home.css";
 
 function Home() {
+  const[loading, setLoading] =useState(true);
 
   const navigate = useNavigate();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="home">
