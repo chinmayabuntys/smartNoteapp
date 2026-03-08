@@ -1,0 +1,75 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:#6366f1;
+  color:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* LOGO */
+
+.logo a{
+  text-decoration:none;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.logo a:hover{
+  transform:scale(1.05);
+}
+
+/* LINKS */
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.nav-item{
+  position:relative;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  padding-bottom:4px;
+}
+
+/* underline animation */
+
+.nav-item::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:2px;
+  background:white;
+  transition:width 0.3s ease;
+}
+
+.nav-item:hover::after{
+  width:100%;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+  padding:6px 14px;
+  border:none;
+  border-radius:6px;
+  background:#ff4d4d;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.logout-btn:hover{
+  background:#e63946;
+  transform:translateY(-1px);
+}

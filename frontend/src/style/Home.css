@@ -1,0 +1,113 @@
+.home{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  max-width:600px;
+  margin:20px 0;
+  line-height:1.6;
+}
+
+.hero-buttons button{
+  margin:10px;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* FEATURES */
+
+.features{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.feature-card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+}
+
+/* CTA */
+
+.cta{
+  padding:80px;
+  text-align:center;
+  background:#f5f5f5;
+}
+
+.cta button{
+  margin-top:20px;
+  padding:14px 30px;
+  border:none;
+  background:#6366f1;
+  color:white;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* ANIMATIONS */
+
+.fade-down{
+  animation:fadeDown 1s ease;
+}
+
+.fade-up{
+  animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeDown{
+  from{
+    opacity:0;
+    transform:translateY(-40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

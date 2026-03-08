@@ -1,0 +1,67 @@
+/* .login-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    height:100vh;
+    gap:20px;
+    background-color:#f6d5d5;
+} */
+/* @media(min-width:768px){
+    .login-container{
+        width:400px;
+        margin:auto;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(229, 61, 61, 0.3);
+    }
+}
+@media(min-width:1024px){
+    .login-container{
+        width:450px;
+    }
+} */
+ /* ⭐ Laptop default */
+ .login-container{
+    width:100%;
+    height:100vh;
+    padding:30px;
+    background-color:rgba(255,255,255,0.8);
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(229,61,61,0.5);
+    margin:auto;
+ }
+.login-form-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:50vh;
+    width: 50%;
+    gap:20px;
+    
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(229,61,61,0.3);
+    background: linear-gradient(to bottom right, rgb(131, 143, 195), rgb(161, 130, 241));
+}
+
+/* ⭐ Tablet */
+@media(max-width:1024px){
+    .login-container{
+        width:100%;
+    }
+}
+
+/* ⭐ Mobile */
+@media(max-width:768px){
+    .login-container{
+        width:100%;
+        height:100vh;
+        border-radius:0;
+        box-shadow:none;
+    }
+}
+.login-container{
+   background-image: url('../assets/background.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
