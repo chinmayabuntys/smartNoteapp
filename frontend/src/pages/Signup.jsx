@@ -15,7 +15,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/users/signup", {
+      const res = await axios.post("https://noteapp-backend-1fwt.onrender.com/api/users/signup", {
         name,
         email,
         dob,

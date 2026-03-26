@@ -37,7 +37,7 @@ function Notes() {
   const fetchNotes = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/api/notes/get", {
+      const res = await axios.get("https://noteapp-backend-1fwt.onrender.com/api/notes/get", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -63,7 +63,7 @@ function Notes() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/notes/create",
+        "https://noteapp-backend-1fwt.onrender.com/api/notes/create",
         { title, content },
         {
           headers: {
@@ -100,7 +100,7 @@ function Notes() {
   const editNote = async (id) => {
     try {
       const res = await axios.patch(
-        `http://localhost:5000/api/notes/edit/${id}`,
+        `https://noteapp-backend-1fwt.onrender.com/api/notes/edit/${id}`,
         { title, content },
         {
           headers: {
@@ -138,7 +138,7 @@ function Notes() {
     if (result.isConfirmed) {
       try {
         const res = await axios.delete(
-          `http://localhost:5000/api/notes/delete/${id}`,
+          `https://noteapp-backend-1fwt.onrender.com/api/notes/delete/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

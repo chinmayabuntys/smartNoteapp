@@ -16,7 +16,7 @@ function Login() {
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try{
-            const res=await axios.post('http://localhost:5000/api/users/login',{email,password});
+            const res=await axios.post('https://noteapp-backend-1fwt.onrender.com/api/users/login',{email,password});
             login(res.data.token);
             navigate('/notes');
             toast.success(res.data.message);
