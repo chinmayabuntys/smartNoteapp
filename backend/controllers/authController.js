@@ -1,6 +1,8 @@
 const User = require("../models/userSchema");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const dotenv=require('dotenv')
+dotenv.config()
 const handleSignup = async (req, res) => {
   const { name, email, password } = req.body;
   if (!name || !email || !password) {
